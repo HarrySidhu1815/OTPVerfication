@@ -1,0 +1,79 @@
+*{
+    padding: none;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-image: linear-gradient(to bottom right, yellow, white);
+}
+.container{
+    border: 1px solid black;
+    box-shadow: 0 10px 10px 0 rgba(138, 136, 136, 0.666);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 350px;
+    padding: 1rem;
+    gap: 1rem;
+    background-color: rgb(254, 249, 249);
+}
+h1{
+    color: rgb(233, 226, 13);
+    font-weight: 500;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.428);
+}
+.form-otp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.input input{
+    padding: 1rem;
+    width: 20%;
+    border: 1px solid rgb(233, 226, 13);
+    border-radius: 10px;
+    font-size: 1rem;
+    text-align: center;
+}
+.input input:focus{
+    outline: 1.5px solid rgba(206, 201, 201, 0.813);
+}
+.input{
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem
+}
+.verify{
+    width: 80%;
+    padding: 1rem;
+    flex-grow: 1;
+    border-radius: 10px;
+    background-color: rgb(230, 228, 165);
+    font-size: 1rem;
+    font-weight: 500;
+}
+.verify.active{
+    background-color: rgb(233, 226, 13);
+    box-shadow: 0 10px 10px 0 rgba(138, 136, 136, 0.666);
+    cursor: pointer;
+}
+
+
